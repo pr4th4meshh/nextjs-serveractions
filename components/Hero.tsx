@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/image"
 
 function Hero() {
   return (
@@ -9,6 +9,7 @@ function Hero() {
           alt="logo"
           width={101}
           height={96}
+          priority
           className="object-contain"
         />
         <h1 className="sm:text-6xl text-5xl text-white lg:max-w-lg font-bold leading-[120%]">
@@ -17,10 +18,16 @@ function Hero() {
         </h1>
       </div>
       <div className="lg:flex-1 relative w-full h-[50vh] justify-center">
-        <Image src="/anime.png" alt="anime" fill className="object-contain" />
+        <Image
+          src="/anime.png"
+          alt="anime"
+          fill
+          className="object-contain"
+          priority
+        />
       </div>
     </header>
-  );
+  )
 }
 
-export default Hero;
+export default Hero
